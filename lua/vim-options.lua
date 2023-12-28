@@ -24,3 +24,5 @@ vim.keymap.set("n", "hm", ':lua require("harpoon.mark").add_file()<CR>', {})
 vim.keymap.set("n", "ht", ':lua require("harpoon.ui").toggle_quick_menu()<CR>', {})
 vim.keymap.set("n", "hn", ':lua require("harpoon.ui").nav_next()<CR>', {})
 vim.keymap.set("n", "hp", ':lua require("harpoon.ui").nav_prev()<CR>', {})
+
+vim.transparent_window = true
