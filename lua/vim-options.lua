@@ -9,6 +9,14 @@ vim.keymap.set("n", "<leader>x", ":Ex<CR>", {})
 -- Save and quit
 vim.keymap.set("n", "<leader>w", ":w<CR>", {})
 vim.keymap.set("n", "<leader>q", ":q<CR>", {})
+--Delete word
+vim.keymap.set("n", "dw", 'vb"_d')
+-- Select all
+vim.keymap.set("n", "<C-a>", "gg<S-v>G")
+-- New tab
+vim.keymap.set("n", "te", ":tabedit<CR>")
+vim.keymap.set("n", "<tab>", ":tabnext<Return>", {})
+vim.keymap.set("n", "<s-tab>", ":tabprev<Return>", {})
 -- Split window
 vim.keymap.set("n", "<leader>ss", ":split<CR>", {})
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", {})
