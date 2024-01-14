@@ -8,7 +8,7 @@ return {
 			--vim.opt.termguicolors = true
 			require("bufferline").setup({
 				options = {
-					mode = "tabs",
+					mode = "buffers",
 					diagnostics_indicator = function(count, level)
 						local icon = level:match("error") and " " or " "
 						return " " .. icon .. count
